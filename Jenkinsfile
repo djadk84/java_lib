@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/djadk84/java_lib.git'
+        git branch: 'main', url: 'https://github.com/djadk84/java_lib.git'
         }
       }
     stage('Build') {
