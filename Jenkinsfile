@@ -23,7 +23,9 @@ pipeline {
       }
     stage('Deploying to Production') {
       when {
-        branch 'feature'
+        not {
+           branch 'feature'
+          }
         }
       steps {
         echo "Deploying to production"
