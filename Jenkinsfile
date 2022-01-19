@@ -29,6 +29,7 @@ pipeline {
         }
       steps {
         echo "Deploying to production"
+        echo env.BRANCH_NAME
         }
       }
     }
